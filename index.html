@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-HK">
-<head>
+<html lang="zh-HK"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0">
 <title>北海道之旅 2026 | 札幌 · 小樽</title>
@@ -13,8 +12,7 @@
 [data-theme=light]{--bg:#faf7f2;--card:#fff;--text:#2c2c2c;--text2:#666;--accent:#e67e22;--accent2:#3498db;--border:#e8e4df;--tag-bg:#f0ede8;--shadow:0 2px 12px rgba(0,0,0,.06)}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background .3s,color .3s;-webkit-tap-highlight-color:transparent}
-#app{max-width:600px;margin:0 auto;padding:12px 14px 60px}
-a{color:var(--accent2);text-decoration:none}
+#app{max-width:600px;margin:0 auto;padding:12px 14px 60px}a{color:var(--accent2);text-decoration:none}
 .card{background:var(--card);border-radius:var(--radius);padding:18px 16px;margin-bottom:14px;box-shadow:var(--shadow);border:1px solid var(--border)}
 .sec-title{font-size:1.15rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
 .sec-title .icon{font-size:1.3rem}
@@ -35,8 +33,7 @@ a{color:var(--accent2);text-decoration:none}
 .map-legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .map-leg{display:flex;align-items:center;gap:4px;font-size:.75rem;color:var(--text2)}
 .map-leg .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.bk-grid{display:grid;gap:10px}
-.bk-item{border:1px solid var(--border);border-radius:10px;padding:12px}
+.bk-grid{display:grid;gap:10px}.bk-item{border:1px solid var(--border);border-radius:10px;padding:12px}
 .bk-item .bk-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
 .bk-item .bk-type{font-size:1.3rem}
 .bk-item .bk-name{font-weight:700;font-size:.95rem}
@@ -61,8 +58,7 @@ a{color:var(--accent2);text-decoration:none}
 .tl-content{font-size:.9rem}
 .tl-title{font-weight:600}
 .tl-desc{color:var(--text2);font-size:.82rem;margin-top:2px}
-.tl-tags{margin-top:4px;display:flex;flex-wrap:wrap;gap:4px}
-.tl-tag{font-size:.68rem;padding:2px 7px;border-radius:8px;background:var(--tag-bg);color:var(--text2)}
+.tl-tags{margin-top:4px;display:flex;flex-wrap:wrap;gap:4px}.tl-tag{font-size:.68rem;padding:2px 7px;border-radius:8px;background:var(--tag-bg);color:var(--text2)}
 .tl-tag.warn{background:#fff3cd;color:#856404}
 .tl-tag.ok{background:#d4edda;color:#155724}
 .tl-tag.book{background:#d1ecf1;color:#0c5460}
@@ -84,8 +80,7 @@ a{color:var(--accent2);text-decoration:none}
 const JST="+09:00";const HKT="+08:00";
 const TRIP={
 meta:{title:"北海道之旅 2026",sub:"札幌 · 小樽 · 旭川",dates:"11.13 — 11.20",people:2},
-events:[
-{t:"2026-11-13T09:15:00"+HKT,l:"航班 HB880 起飛",d:"香港 → 北海道"},
+events:[{t:"2026-11-13T09:15:00"+HKT,l:"航班 HB880 起飛",d:"香港 → 北海道"},
 {t:"2026-11-13T15:00:00"+JST,l:"抵達新千歲機場",d:"日本時間 UTC+9"},
 {t:"2026-11-14T09:00:00"+JST,l:"札幌第一天出發",d:"北海道神宮 → 白色戀人公園"},
 {t:"2026-11-15T14:05:00"+JST,l:"籃球比賽 北海道 vs 佐賀",d:"北海きたえーる"},
@@ -105,14 +100,20 @@ bookings:[
 {type:"🍫",name:"白色戀人公園 DIY 朱古力盒",badge:"待預約",rows:["11月14日（六）預計11:00時段","製作個人朱古力盒體驗","官網預約：shiroikoibitopark.jp"],note:"需提前1-2個月在官網預約"},
 ],
 days:[
-{date:"11/13",dow:"五",title:"抵達日",color:"#e74c3c",hotel:"札幌索拉利亚西铁酒店",items:[
+{/* Day 1 */
+date:"11/13",dow:"五",title:"抵達日",color:"#e74c3c",
+hotel:"札幌索拉利亚西铁酒店",
+items:[
 {time:"09:15",tz:"HKT",title:"航班 HB880 起飛",desc:"香港 → 北海道新千歲機場",place:"香港國際機場",tags:["flight"]},
 {time:"15:00",tz:"JST",title:"抵達新千歲機場",desc:"JR快速Airport號 → 札幌站（約36-40分鐘）",place:"新千歲空港",tags:["transport"]},
 {time:"17:00",tz:"JST",title:"酒店 Check-in",desc:"札幌索拉利亚西铁酒店 Solaria Nishitetsu Hotel Sapporo",place:"札幌ソラリア西鉄ホテル札幌",tags:["hotel"]},
 {time:"18:30",tz:"JST",title:"晚餐：味噌拉麵 Yoshi乃 札幌APIA店",desc:"札幌站B1F APIA Joyful Walk",place:"味噌ラーメン Yoshi乃 札幌アピア店",tags:["food"]},
 {time:"19:30",tz:"JST",title:"超市買打折刺身",desc:"MaxValu Kita 1 jo-higashi，酒店步行5分鐘",place:"マックスバリュ 北1条東店",tags:["tips"]},
 ]},
-{date:"11/14",dow:"六",title:"札幌西區 · 神宮 + 白色戀人",color:"#f39c12",hotel:"札幌索拉利亚西铁酒店",items:[
+{/* Day 2 */
+date:"11/14",dow:"六",title:"札幌西區 · 神宮 + 白色戀人",color:"#f39c12",
+hotel:"札幌索拉利亚西铁酒店",
+items:[
 {time:"08:45",tz:"JST",title:"早餐：boulangerie coron Marui Imai",desc:"札幌站附近法式麵包店",place:"ブーランジェリー コロン 丸井今井札幌店",tags:["food"]},
 {time:"09:00",tz:"JST",title:"地鐵 → 円山公園站",desc:"東西線 7分鐘。買ドニチカきっぷ ¥520（週末一日券）",place:"円山公園駅",tags:["transport","book"]},
 {time:"09:15",tz:"JST",title:"北海道神宮 + 神宮茶屋",desc:"焼福餅、判官餅、六花亭円山店",place:"北海道神宮",tags:["sightseeing"]},
@@ -125,7 +126,10 @@ days:[
 {time:"17:30",tz:"JST",title:"晚餐：迴轉壽司 根室花丸 Stellar Place 6F",desc:"JR Tower Stellar Place 6樓",place:"回転寿司 根室花丸 ステラプレイス店",tags:["food"]},
 {time:"19:00",tz:"JST",title:"超市：MaxValu Kita 1 jo-higashi",desc:"酒店步行5分鐘，晚間打折刺身",place:"マックスバリュ 北1条東店",tags:["tips"]},
 ]},
-{date:"11/15",dow:"日",title:"北大銀杏 + 籃球賽",color:"#f1c40f",hotel:"札幌索拉利亚西铁酒店",items:[
+{/* Day 3 */
+date:"11/15",dow:"日",title:"北大銀杏 + 籃球賽",color:"#f1c40f",
+hotel:"札幌索拉利亚西铁酒店",
+items:[
 {time:"08:30",tz:"JST",title:"早餐：Lemon Bakery",desc:"創成Cross 1F，札幌站步行5分鐘",place:"Lemon Bakery",tags:["food"]},
 {time:"09:15",tz:"JST",title:"步行前往北海道大學",desc:"約10-15分鐘",place:"北海道大学",tags:["transport"]},
 {time:"09:30",tz:"JST",title:"北海道大學銀杏並木道",desc:"金黃期，免費參觀，校園全天開放",place:"北海道大学銀杏並木",tags:["sightseeing"]},
@@ -139,7 +143,10 @@ days:[
 {time:"17:00",tz:"JST",title:"晚餐：札幌沾麵 風來堂",desc:"豐平8條，きたえーる步行約15分鐘",place:"札幌つけ麺 風來堂",tags:["food"]},
 {time:"18:30",tz:"JST",title:"返回酒店",desc:"地鐵或步行",place:"札幌駅",tags:["transport"]},
 ]},
-{date:"11/16",dow:"一",title:"旭川一日遊（團巴）",color:"#27ae60",hotel:"札幌索拉利亚西铁酒店",items:[
+{/* Day 4 */
+date:"11/16",dow:"一",title:"旭川一日遊（團巴）",color:"#27ae60",
+hotel:"札幌索拉利亚西铁酒店",
+items:[
 {time:"07:00",tz:"JST",title:"🏨 酒店早餐",desc:"團巴日唯一酒店早餐",place:"札幌ソラリア西鉄ホテル札幌",tags:["food"]},
 {time:"07:45",tz:"JST",title:"步行前往札幌駅北口",desc:"團巴集合地點",place:"札幌駅北口団体バス乗り場",tags:["transport"]},
 {time:"08:00",tz:"JST",title:"🚌 團巴出發",desc:"北海道リゾートライナー，札幌駅北口",place:"札幌駅北口",tags:["event"]},
@@ -152,7 +159,10 @@ days:[
 {time:"18:30",tz:"JST",title:"返回札幌駅北口",desc:"團巴回到出發地點",place:"札幌駅北口",tags:["transport"]},
 {time:"19:00",tz:"JST",title:"晚餐：Karai Ramen 14 札幌南口本店",desc:"札幌站附近，每日札幌会館",place:"辛いラーメン 14 札幌南口本店",tags:["food"]},
 ]},
-{date:"11/17",dow:"二",title:"東區 + 藻岩山夜景 + 難陀",color:"#16a085",hotel:"札幌索拉利亚西铁酒店",items:[
+{/* Day 5 */
+date:"11/17",dow:"二",title:"東區 + 藻岩山夜景 + 難陀",color:"#16a085",
+hotel:"札幌索拉利亚西铁酒店",
+items:[
 {time:"08:30",tz:"JST",title:"早餐：boulangerie coron Marui Imai",desc:"札幌站附近",place:"ブーランジェリー コロン 丸井今井札幌店",tags:["food"]},
 {time:"09:30",tz:"JST",title:"地鐵 → Ario札幌",desc:"東西線 札幌→東区役所前，約¥250",place:"アリオ札幌",tags:["transport"]},
 {time:"10:00",tz:"JST",title:"Ario札幌購物（1小時）",desc:"UNIQLO、Akachan Honpo、Toys R Us、#C-pla",place:"アリオ札幌",tags:["shopping"]},
@@ -168,7 +178,10 @@ days:[
 {time:"18:30",tz:"JST",title:"晚餐：難陀（自助餐）",desc:"薄野Cyber City大樓地下2F。烤肉+大閘蟹自助餐",place:"難陀 札幌",tags:["food"]},
 {time:"20:00",tz:"JST",title:"超市：Maxvalu Yamahana",desc:"薄野附近，打折刺身",place:"マックスバリュ 山本店",tags:["tips"]},
 ]},
-{date:"11/18",dow:"三",title:"札幌市中心悠閒日",color:"#3498db",hotel:"札幌索拉利亚西铁酒店",items:[
+{/* Day 6 */
+date:"11/18",dow:"三",title:"札幌市中心悠閒日",color:"#3498db",
+hotel:"札幌索拉利亚西铁酒店",
+items:[
 {time:"09:00",tz:"JST",title:"早餐：Donguri Odori",desc:"大通Le Trois 1F，坐下喝咖啡",place:"どんぐり 大通",tags:["food"]},
 {time:"10:00",tz:"JST",title:"札幌電視塔 + 大通公園",desc:"展望台 + 公園散步",place:"札幌テレビ塔",tags:["sightseeing"]},
 {time:"10:30",tz:"JST",title:"大通公園散步",desc:"免費，步行至狸小路約10分鐘",place:"大通公園",tags:["sightseeing"]},
@@ -179,7 +192,10 @@ days:[
 {time:"17:30",tz:"JST",title:"晚餐：牡蠣屋 Wine&Sake 居酒屋",desc:"南3条西3丁目 G大樓7F。生蠔+日本酒+葡萄酒",place:"牡蠣屋 Wine&Sake",tags:["food"]},
 {time:"19:00",tz:"JST",title:"超市：MaxValu Kita 1 jo-higashi",desc:"回酒店路上，打折刺身",place:"マックスバリュ 北1条東店",tags:["tips"]},
 ]},
-{date:"11/19",dow:"四",title:"小樽一日遊 ⭐重點行程",color:"#9b59b6",hotel:"札幌索拉利亚西铁酒店",items:[
+{/* Day 7 */
+date:"11/19",dow:"四",title:"小樽一日遊 ⭐重點行程",color:"#9b59b6",
+hotel:"札幌索拉利亚西铁酒店",
+items:[
 {time:"07:30",tz:"JST",title:"早餐：Lemon Bakery",desc:"買完趕08:30 JR",place:"Lemon Bakery",tags:["food","warn"]},
 {time:"08:30",tz:"JST",title:"JR 札幌 → 小樽",desc:"最快33分鐘，單程¥750，約20分鐘一班",place:"小樽駅",tags:["transport"]},
 {time:"09:10",tz:"JST",title:"抵達小樽站",desc:"路過三角市場門口看一眼（不進去吃）",place:"小樽駅",tags:["transport"]},
@@ -198,7 +214,10 @@ days:[
 {time:"19:15",tz:"JST",title:"步行前往小樽站",desc:"約10分鐘",place:"小樽駅",tags:["transport"]},
 {time:"19:30",tz:"JST",title:"JR 小樽 → 札幌",desc:"33分鐘，¥750",place:"札幌駅",tags:["transport"]},
 ]},
-{date:"11/20",dow:"五",title:"回程日",color:"#95a5a6",hotel:"—",items:[
+{/* Day 8 */
+date:"11/20",dow:"五",title:"回程日",color:"#95a5a6",
+hotel:"—",
+items:[
 {time:"08:00",tz:"JST",title:"早餐：KINOTOYA BAKE POLE TOWN",desc:"大通地下街，退房前買",place:"KINOTOYA BAKE POLE TOWN",tags:["food"]},
 {time:"09:00",tz:"JST",title:"札幌站周邊最後購物",desc:"Stellar Place、APIA、大丸免稅",place:"札幌ステラプレイス",tags:["shopping"]},
 {time:"12:00",tz:"JST",title:"午餐：味噌拉麵 Yoshi乃 APIA店",desc:"札幌站B1F，快食",place:"味噌ラーメン Yoshi乃 札幌アピア店",tags:["food"]},
@@ -239,29 +258,132 @@ tips:[
 "🎨 小樽藝術村11月 10:00-17:00，每週三休館（已避開，改週四去）",
 ],
 };
-function gmaps(q){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q)}
-function gnav(o,d,w){let u="https://www.google.com/maps/dir/?api=1&origin="+encodeURIComponent(o)+"&destination="+encodeURIComponent(d)+"&travelmode=walking";if(w&&w.length)u+="&waypoints="+encodeURIComponent(w.join("|"));return u}
-function pad(n){return String(n).padStart(2,"0")}
-function getNextEvent(){const n=Date.now();for(const e of TRIP.events){if(new Date(e.t).getTime()>n)return e}return null}
-function updateCountdown(){const el=document.getElementById("cd-card");if(!el)return;const ev=getNextEvent();if(!ev){el.querySelector(".cd-event").textContent="旅程已完成 🎉";el.querySelector(".cd-nums").style.display="none";el.querySelector(".cd-label").textContent="2026年11月13日 — 11月20日";return}const diff=new Date(ev.t).getTime()-Date.now();if(diff<0)return;const d=Math.floor(diff/86400000),h=Math.floor(diff%86400000/3600000),m=Math.floor(diff%3600000/60000),s=Math.floor(diff%60000/1000);el.querySelector(".cd-event").textContent=ev.l;el.querySelector(".cd-label").textContent=ev.d;el.querySelector("#cd-d").textContent=pad(d);el.querySelector("#cd-h").textContent=pad(h);el.querySelector("#cd-m").textContent=pad(m);el.querySelector("#cd-s").textContent=pad(s);el.querySelector(".cd-tz").textContent="目標時間 "+ev.t.slice(-6).replace("+","UTC+")}
-function detectTheme(){const hr=new Date().getHours();const pD=window.matchMedia("(prefers-color-scheme:dark)").matches;const isNight=hr>=17||hr<7;const dark=pD||isNight;document.documentElement.setAttribute("data-theme",dark?"dark":"light");document.getElementById("themeToggle").textContent=dark?"☀️":"🌙"}
-function toggleTheme(){const c=document.documentElement.getAttribute("data-theme");const n=c==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",n);document.getElementById("themeToggle").textContent=n==="dark"?"☀️":"🌙"}
-function render(){const app=document.getElementById("app");let h="";const ev=getNextEvent();
-h+=`<div class="header"><h1>${TRIP.meta.title}</h1><div class="sub">${TRIP.meta.sub} · ${TRIP.meta.people}人</div><div class="dates">${TRIP.meta.dates}</div></div>`;
-h+=`<div class="card cd-card" id="cd-card"><div class="cd-label">${ev?ev.d:"2026年11月13日 — 11月20日"}</div><div class="cd-event">${ev?ev.l:"旅程已完成 🎉"}</div><div class="cd-nums"><div class="cd-unit"><div class="cd-num" id="cd-d">00</div><div class="cd-cap">天</div></div><div class="cd-unit"><div class="cd-num" id="cd-h">00</div><div class="cd-cap">時</div></div><div class="cd-unit"><div class="cd-num" id="cd-m">00</div><div class="cd-cap">分</div></div><div class="cd-unit"><div class="cd-num" id="cd-s">00</div><div class="cd-cap">秒</div></div></div><div class="cd-tz"></div></div>`;
-h+=`<div class="card"><div class="sec-title"><span class="icon">🗺️</span>行程總覽地圖</div><div class="map-wrap">${renderMap()}</div><div class="map-legend">${TRIP.days.map(d=>`<div class="map-leg"><span class="dot" style="background:${d.color}"></span>${d.date} ${d.dow}</div>`).join("")}</div></div>`;
-h+=`<div class="card"><div class="sec-title"><span class="icon">🎫</span>已確認訂單</div><div class="bk-grid">${TRIP.bookings.map(b=>`<div class="bk-item"><div class="bk-head"><span class="bk-type">${b.type}</span><span class="bk-name">${b.name}</span><span class="bk-badge">${b.badge}</span></div>${b.rows.map(r=>`<div class="bk-row">${r}</div>`).join("")}${b.note?`<div class="bk-note">⚠️ ${b.note}</div>`:""}</div>`).join("")}</div></div>`;
-h+=`<div class="card"><div class="sec-title"><span class="icon">📅</span>逐日行程</div>${TRIP.days.map((d,di)=>renderDay(d,di)).join("")}</div>`;
-h+=`<div class="card"><div class="sec-title"><span class="icon">📋</span>待辦清單</div>${TRIP.todo.map(t=>`<div class="todo-item"><span class="todo-icon">${t.done?"✅":"⬜"}</span><span>${t.done?"<s>":""}${t.text}${t.done?"</s>":""}</span></div>`).join("")}</div>`;
-h+=`<div class="card"><div class="sec-title"><span class="icon">💡</span>實用貼士</div>${TRIP.tips.map(t=>`<div class="tip-item">${t}</div>`).join("")}</div>`;
-h+=`<div class="footer">北海道之旅 2026 · 札幌 · 小樽 · 旭川</div>`;
-app.innerHTML=h;document.querySelectorAll(".day-head").forEach(e=>e.addEventListener("click",()=>toggleDay(e)))}
-function renderDay(d,di){const pl=d.items.filter(i=>i.place).map(i=>i.place);const btn=pl.length>=2?`<button class="day-map-btn" onclick="openDayNav(${di})">📍 Google Maps 多點導航（全天路線）</button>`:"";return `<div class="day-block"><div class="day-head" style="background:${d.color}" data-day="${di}"><span class="day-date">${d.date}（${d.dow}）</span><span class="day-title">${d.title}</span><span class="day-arrow">▼</span></div><div class="day-body" id="day-body-${di}">${btn}<div class="tl">${d.items.map(renderItem).join("")}</div></div></div>`}
-function renderItem(item){const tm={flight:"✈️ 航班",transport:"🚇 交通",hotel:"🏨 酒店",food:"🍽️ 餐飲",sightseeing:"📸 景點",shopping:"🛍️ 購物",event:"🎫 活動",tips:"💡 貼士",rest:"☕ 休息"};const tags=(item.tags||[]).map(t=>{if(t==="warn")return`<span class="tl-tag warn">⚠️ 注意</span>`;if(t==="ok")return`<span class="tl-tag ok">✅ 確認</span>`;if(t==="book")return`<span class="tl-tag book">📞 需預約</span>`;return`<span class="tl-tag">${tm[t]||t}</span>`}).join("");const pl=item.place?`<a class="place-link" href="${gmaps(item.place)}" target="_blank">${item.place}</a>`:"";return `<div class="tl-item"><div class="tl-time">${item.time}<br><span class="tl-tz">${item.tz||"JST"}</span></div><div class="tl-content"><div class="tl-title">${item.title}</div>${item.desc?`<div class="tl-desc">${item.desc}</div>`:""}${pl?`<div class="tl-desc">📍 ${pl}</div>`:""}${tags?`<div class="tl-tags">${tags}</div>`:""}</div></div>`}
-function renderMap(){const locs={sapporo:{x:420,y:340},hotel:{x:420,y:345},shrine:{x:360,y:325,label:"神宮"},shiroi:{x:300,y:315,label:"白色戀人"},beer:{x:450,y:335,label:"啤酒博物館"},ario:{x:460,y:325,label:"Ario"},univ:{x:415,y:310,label:"北大"},kitayell:{x:430,y:380,label:"きたえーる"},moiwa:{x:390,y:400,label:"藻岩山"},suwa:{x:470,y:315,label:"諏訪神社"},picante:{x:415,y:300,label:"Picante"},otaru:{x:200,y:200,label:"小樽"},otaruCanal:{x:175,y:210,label:"運河"},asahikawa:{x:600,y:120,label:"旭川"},airport:{x:500,y:480,label:"機場"}};const routes=[{color:"#e74c3c",pts:[[500,480],[420,340]]},{color:"#f39c12",pts:[[420,340],[360,325],[300,315]]},{color:"#f1c40f",pts:[[420,340],[415,310],[415,300],[430,380]]},{color:"#27ae60",pts:[[420,340],[600,120]]},{color:"#16a085",pts:[[420,340],[460,325],[450,335],[470,315],[390,400]]},{color:"#3498db",pts:[[420,340],[415,335]]},{color:"#9b59b6",pts:[[420,340],[200,200]]},{color:"#95a5a6",pts:[[420,340],[500,480]]}];let s=`<svg class="map-svg" viewBox="0 0 700 560" xmlns="http://www.w3.org/2000/svg"><defs><filter id="r"><feTurbulence baseFrequency="0.02" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="2"/></filter></defs>`;s+=`<path d="M50,80 Q120,60 200,90 Q280,70 350,100 Q450,80 550,110 Q620,100 660,140 L660,520 L50,520 Z" fill="var(--bg)" stroke="var(--border)" stroke-width="1.5" filter="url(#r)"/>`;s+=`<text x="80" y="180" font-size="11" fill="var(--text2)" opacity="0.4">日本海</text>`;s+=`<path d="M50,80 Q120,60 200,90 Q280,70 350,100" fill="none" stroke="var(--accent2)" stroke-width="2" opacity="0.3" filter="url(#r)"/>`;routes.forEach(r=>{const p=r.pts.map((pt,i)=>i===0?`M${pt[0]},${pt[1]}`:`L${pt[0]},${pt[1]}`).join(" ");s+=`<path d="${p}" fill="none" stroke="${r.color}" stroke-width="2.5" stroke-dasharray="6,3" opacity="0.7" stroke-linecap="round"/>`});Object.entries(locs).forEach(([k,l])=>{if(k==="hotel"){s+=`<circle cx="${l.x}" cy="${l.y}" r="7" fill="#e74c3c" stroke="#fff" stroke-width="2"/><text x="${l.x+10}" y="${l.y+4}" font-size="10" fill="var(--text)" font-weight="700">🏨 酒店</text>`}else if(l.label){s+=`<circle cx="${l.x}" cy="${l.y}" r="4" fill="var(--accent)" stroke="var(--card)" stroke-width="1.5"/><text x="${l.x+7}" y="${l.y+3}" font-size="9" fill="var(--text2)">${l.label}</text>`}});s+=`<text x="590" y="115" font-size="9" fill="var(--text2)">旭川</text><circle cx="600" cy="120" r="4" fill="#27ae60" stroke="var(--card)" stroke-width="1.5"/>`;s+=`<text x="490" y="495" font-size="9" fill="var(--text2)">新千歲機場</text><circle cx="500" cy="480" r="4" fill="#95a5a6" stroke="var(--card)" stroke-width="1.5"/>`;s+=`</svg>`;return s}
-function toggleDay(h){const b=document.getElementById("day-body-"+h.dataset.day);h.classList.toggle("open");b.classList.toggle("open")}
-function openDayNav(di){const d=TRIP.days[di];const pl=d.items.filter(i=>i.place).map(i=>i.place);if(pl.length<2)return;window.open(gnav(pl[0],pl[pl.length-1],pl.slice(1,-1)),"_blank")}
-detectTheme();window.matchMedia("(prefers-color-scheme:dark)").addEventListener("change",detectTheme);render();updateCountdown();setInterval(updateCountdown,1000);setInterval(detectTheme,60000);
+function gmaps(q){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);}
+function gnav(origin,dest,wps){
+let u="https://www.google.com/maps/dir/?api=1&origin="+encodeURIComponent(origin)+"&destination="+encodeURIComponent(dest)+"&travelmode=walking";
+if(wps&&wps.length)u+="&waypoints="+encodeURIComponent(wps.join("|"));
+return u;
+}
+function pad(n){return String(n).padStart(2,"0");}
+function getNextEvent(){
+const now=Date.now();
+for(const e of TRIP.events){
+if(new Date(e.t).getTime()>now)return e;
+}
+return null;
+}
+function updateCountdown(){
+const el=document.getElementById("cd-card");
+if(!el)return;
+const ev=getNextEvent();
+if(!ev){
+el.querySelector(".cd-event").textContent="旅程已完成 🎉";
+el.querySelector(".cd-nums").style.display="none";
+el.querySelector(".cd-label").textContent="2026年11月13日 — 11月20日";
+return;
+}
+const diff=new Date(ev.t).getTime()-Date.now();
+if(diff<0)return;
+const d=Math.floor(diff/86400000);
+const h=Math.floor(diff%86400000/3600000);
+const m=Math.floor(diff%3600000/60000);
+const s=Math.floor(diff%60000/1000);
+el.querySelector(".cd-event").textContent=ev.l;
+el.querySelector(".cd-label").textContent=ev.d;
+el.querySelector("#cd-d").textContent=pad(d);
+el.querySelector("#cd-h").textContent=pad(h);
+el.querySelector("#cd-m").textContent=pad(m);
+el.querySelector("#cd-s").textContent=pad(s);
+el.querySelector(".cd-tz").textContent="目標時間 "+ev.t.slice(-6).replace("+","UTC+");
+}
+function detectTheme(){
+const hour=new Date().getHours();
+const prefersDark=window.matchMedia("(prefers-color-scheme:dark)").matches;
+const isNight=hour>=17||hour<7;
+const dark=prefersDark||isNight;
+document.documentElement.setAttribute("data-theme",dark?"dark":"light");
+document.getElementById("themeToggle").textContent=dark?"☀️":"🌙";
+}
+function toggleTheme(){
+const cur=document.documentElement.getAttribute("data-theme");
+const next=cur==="dark"?"light":"dark";
+document.documentElement.setAttribute("data-theme",next);
+document.getElementById("themeToggle").textContent=next==="dark"?"☀️":"🌙";
+}
+function render(){
+const app=document.getElementById("app");
+let html="";
+html+='<div class="header"><h1>'+TRIP.meta.title+'</h1><div class="sub">'+TRIP.meta.sub+' · '+TRIP.meta.people+'人</div><div class="dates">'+TRIP.meta.dates+'</div></div>';
+const ev=getNextEvent();
+html+='<div class="card cd-card" id="cd-card"><div class="cd-label">'+(ev?ev.d:"2026年11月13日 — 11月20日")+'</div><div class="cd-event">'+(ev?ev.l:"旅程已完成 🎉")+'</div><div class="cd-nums"><div class="cd-unit"><div class="cd-num" id="cd-d">00</div><div class="cd-cap">天</div></div><div class="cd-unit"><div class="cd-num" id="cd-h">00</div><div class="cd-cap">時</div></div><div class="cd-unit"><div class="cd-num" id="cd-m">00</div><div class="cd-cap">分</div></div><div class="cd-unit"><div class="cd-num" id="cd-s">00</div><div class="cd-cap">秒</div></div></div><div class="cd-tz"></div></div>';
+html+='<div class="card"><div class="sec-title"><span class="icon">🗺️</span>行程總覽地圖</div><div class="map-wrap">'+renderMap()+'</div><div class="map-legend">'+TRIP.days.map(function(d){return '<div class="map-leg"><span class="dot" style="background:'+d.color+'"></span>'+d.date+' '+d.dow+'</div>';}).join("")+'</div></div>';
+html+='<div class="card"><div class="sec-title"><span class="icon">🎫</span>已確認訂單</div><div class="bk-grid">'+TRIP.bookings.map(function(b){return '<div class="bk-item"><div class="bk-head"><span class="bk-type">'+b.type+'</span><span class="bk-name">'+b.name+'</span><span class="bk-badge">'+b.badge+'</span></div>'+b.rows.map(function(r){return '<div class="bk-row">'+r+'</div>';}).join("")+(b.note?'<div class="bk-note">⚠️ '+b.note+'</div>':"")+'</div>';}).join("")+'</div></div>';
+html+='<div class="card"><div class="sec-title"><span class="icon">📅</span>逐日行程</div>'+TRIP.days.map(function(d,di){return renderDay(d,di);}).join("")+'</div>';
+html+='<div class="card"><div class="sec-title"><span class="icon">📋</span>待辦清單</div>'+TRIP.todo.map(function(t){return '<div class="todo-item"><span class="todo-icon">'+(t.done?"✅":"⬜")+'</span><span>'+(t.done?"<s>":"")+t.text+(t.done?"</s>":"")+'</span></div>';}).join("")+'</div>';
+html+='<div class="card"><div class="sec-title"><span class="icon">💡</span>實用貼士</div>'+TRIP.tips.map(function(t){return '<div class="tip-item">'+t+'</div>';}).join("")+'</div>';
+html+='<div class="footer">北海道之旅 2026 · 札幌 · 小樽 · 旭川</div>';
+app.innerHTML=html;
+document.querySelectorAll(".day-head").forEach(function(h){h.addEventListener("click",function(){toggleDay(h);});});
+}
+function renderDay(d,di){
+var places=d.items.filter(function(i){return i.place;}).map(function(i){return i.place;});
+var navBtn=places.length>=2?'<button class="day-map-btn" onclick="openDayNav('+di+')">📍 Google Maps 多點導航（全天路線）</button>':"";
+return '<div class="day-block"><div class="day-head" style="background:'+d.color+'" data-day="'+di+'"><span class="day-date">'+d.date+'（'+d.dow+'）</span><span class="day-title">'+d.title+'</span><span class="day-arrow">▼</span></div><div class="day-body" id="day-body-'+di+'">'+navBtn+'<div class="tl">'+d.items.map(function(item){return renderItem(item);}).join("")+'</div></div></div>';
+}
+function renderItem(item){
+var tagMap={flight:"✈️ 航班",transport:"🚇 交通",hotel:"🏨 酒店",food:"🍽️ 餐飲",sightseeing:"📸 景點",shopping:"🛍️ 購物",event:"🎫 活動",tips:"💡 貼士",rest:"☕ 休息",warn:"⚠️ 注意",book:"📞 預約",ok:"✅ 確認"};
+var tags=(item.tags||[]).map(function(t){
+if(t==="warn")return '<span class="tl-tag warn">⚠️ 注意</span>';
+if(t==="ok")return '<span class="tl-tag ok">✅ 確認</span>';
+if(t==="book")return '<span class="tl-tag book">📞 需預約</span>';
+return '<span class="tl-tag">'+(tagMap[t]||t)+'</span>';
+}).join("");
+var placeLink=item.place?'<a class="place-link" href="'+gmaps(item.place)+'" target="_blank">'+item.place+'</a>':"";
+return '<div class="tl-item"><div class="tl-time">'+item.time+'<br><span class="tl-tz">'+(item.tz||"JST")+'</span></div><div class="tl-content"><div class="tl-title">'+item.title+'</div>'+(item.desc?'<div class="tl-desc">'+item.desc+'</div>':"")+(placeLink?'<div class="tl-desc">📍 '+placeLink+'</div>':"")+(tags?'<div class="tl-tags">'+tags+'</div>':"")+'</div></div>';
+}
+function renderMap(){
+var locs={sapporo:{x:420,y:340},hotel:{x:420,y:345},shrine:{x:360,y:325},shiroi:{x:300,y:315},beer:{x:450,y:335},ario:{x:460,y:325},univ:{x:415,y:310},kitayell:{x:430,y:380},moiwa:{x:390,y:400},suwa:{x:470,y:315},picante:{x:415,y:300},otaru:{x:200,y:200},otaruCanal:{x:175,y:210},asahikawa:{x:600,y:120},airport:{x:500,y:480}};
+var routes=[{color:"#e74c3c",pts:[[500,480],[420,340]]},{color:"#f39c12",pts:[[420,340],[360,325],[300,315]]},{color:"#f1c40f",pts:[[420,340],[415,310],[415,300],[430,380]]},{color:"#27ae60",pts:[[420,340],[600,120]]},{color:"#16a085",pts:[[420,340],[460,325],[450,335],[470,315],[390,400]]},{color:"#3498db",pts:[[420,340],[415,335]]},{color:"#9b59b6",pts:[[420,340],[200,200]]},{color:"#95a5a6",pts:[[420,340],[500,480]]}];
+var svg='<svg class="map-svg" viewBox="0 0 700 560" xmlns="http://www.w3.org/2000/svg"><defs><filter id="rough"><feTurbulence baseFrequency="0.02" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="2"/></filter></defs>';
+svg+='<path d="M50,80 Q120,60 200,90 Q280,70 350,100 Q450,80 550,110 Q620,100 660,140 L660,520 L50,520 Z" fill="var(--bg)" stroke="var(--border)" stroke-width="1.5" filter="url(#rough)"/>';
+svg+='<text x="80" y="180" font-size="11" fill="var(--text2)" opacity="0.4">日本海</text>';
+svg+='<path d="M50,80 Q120,60 200,90 Q280,70 350,100" fill="none" stroke="var(--accent2)" stroke-width="2" opacity="0.3" filter="url(#rough)"/>';
+routes.forEach(function(r){var pts=r.pts.map(function(p,i){return(i===0?"M":"L")+p[0]+","+p[1];}).join(" ");svg+='<path d="'+pts+'" fill="none" stroke="'+r.color+'" stroke-width="2.5" stroke-dasharray="6,3" opacity="0.7" stroke-linecap="round"/>';});
+svg+='<circle cx="420" cy="345" r="7" fill="#e74c3c" stroke="#fff" stroke-width="2"/><text x="430" y="349" font-size="10" fill="var(--text)" font-weight="700">🏨 酒店</text>';
+svg+='<circle cx="360" cy="325" r="4" fill="var(--accent)" stroke="var(--card)" stroke-width="1.5"/><text x="367" y="328" font-size="9" fill="var(--text2)">神宮</text>';
+svg+='<circle cx="300" cy="315" r="4" fill="var(--accent)" stroke="var(--card)" stroke-width="1.5"/><text x="307" y="318" font-size="9" fill="var(--text2)">白色戀人</text>';
+svg+='<circle cx="450" cy="335" r="4" fill="var(--accent)" stroke="var(--card)" stroke-width="1.5"/><text x="457" y="338" font-size="9" fill="var(--text2)">啤酒博物館</text>';
+svg+='<circle cx="460" cy="325" r="4" fill="var(--accent)" stroke="var(--card)" stroke-width="1.5"/><text x="467" y="328" font-size="9" fill="var(--text2)">Ario</text>';
+svg+='<circle cx="415" cy="310" r="4" fill="var(--accent)" stroke="var(--card)" stroke-width="1.5"/><text x="422" y="313" font-size="9" fill="var(--text2)">北大</text>';
+svg+='<circle cx="430" cy="380" r="4" fill="var(--accent)" stroke="var(--card)" stroke-width="1.5"/><text x="437" y="383" font-size="9" fill="var(--text2)">きたえーる</text>';
+svg+='<circle cx="390" cy="400" r="4" fill="var(--accent)" stroke="var(--card)" stroke-width="1.5"/><text x="397" y="403" font-size="9" fill="var(--text2)">藻岩山</text>';
+svg+='<circle cx="470" cy="315" r="4" fill="var(--accent)" stroke="var(--card)" stroke-width="1.5"/><text x="477" y="318" font-size="9" fill="var(--text2)">諏訪神社</text>';
+svg+='<circle cx="200" cy="200" r="4" fill="var(--accent)" stroke="var(--card)" stroke-width="1.5"/><text x="207" y="203" font-size="9" fill="var(--text2)">小樽</text>';
+svg+='<circle cx="600" cy="120" r="4" fill="#27ae60" stroke="var(--card)" stroke-width="1.5"/><text x="590" y="115" font-size="9" fill="var(--text2)">旭川</text>';
+svg+='<circle cx="500" cy="480" r="4" fill="#95a5a6" stroke="var(--card)" stroke-width="1.5"/><text x="490" y="495" font-size="9" fill="var(--text2)">機場</text>';
+svg+='</svg>';
+return svg;
+}
+function toggleDay(head){
+var body=document.getElementById("day-body-"+head.dataset.day);
+head.classList.toggle("open");
+body.classList.toggle("open");
+}
+function openDayNav(di){
+var d=TRIP.days[di];
+var places=d.items.filter(function(i){return i.place;}).map(function(i){return i.place;});
+if(places.length<2)return;
+var origin=places[0];
+var dest=places[places.length-1];
+var wps=places.slice(1,-1);
+window.open(gnav(origin,dest,wps),"_blank");
+}
+detectTheme();
+window.matchMedia("(prefers-color-scheme:dark)").addEventListener("change",detectTheme);
+render();
+updateCountdown();
+setInterval(updateCountdown,1000);
+setInterval(detectTheme,60000);
 </script>
 </body>
 </html>
