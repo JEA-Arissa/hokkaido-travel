@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-HK"><head>
+<html lang="zh-HK">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0">
 <title>北海道之旅 2026 | 札幌 · 小樽</title>
@@ -12,7 +13,8 @@
 [data-theme=light]{--bg:#faf7f2;--card:#fff;--text:#2c2c2c;--text2:#666;--accent:#e67e22;--accent2:#3498db;--border:#e8e4df;--tag-bg:#f0ede8;--shadow:0 2px 12px rgba(0,0,0,.06)}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background .3s,color .3s;-webkit-tap-highlight-color:transparent}
-#app{max-width:600px;margin:0 auto;padding:12px 14px 60px}a{color:var(--accent2);text-decoration:none}
+#app{max-width:600px;margin:0 auto;padding:12px 14px 60px}
+a{color:var(--accent2);text-decoration:none}
 .card{background:var(--card);border-radius:var(--radius);padding:18px 16px;margin-bottom:14px;box-shadow:var(--shadow);border:1px solid var(--border)}
 .sec-title{font-size:1.15rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
 .sec-title .icon{font-size:1.3rem}
@@ -33,7 +35,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Pin
 .map-legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .map-leg{display:flex;align-items:center;gap:4px;font-size:.75rem;color:var(--text2)}
 .map-leg .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.bk-grid{display:grid;gap:10px}.bk-item{border:1px solid var(--border);border-radius:10px;padding:12px}
+.bk-grid{display:grid;gap:10px}
+.bk-item{border:1px solid var(--border);border-radius:10px;padding:12px}
 .bk-item .bk-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
 .bk-item .bk-type{font-size:1.3rem}
 .bk-item .bk-name{font-weight:700;font-size:.95rem}
@@ -53,12 +56,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Pin
 .tl::before{content:"";position:absolute;left:54px;top:0;bottom:0;width:2px;background:var(--border)}
 .tl-item{position:relative;padding-bottom:14px}
 .tl-item::before{content:"";position:absolute;left:-28px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--card);border:2px solid var(--accent)}
-.tl-time{position:absolute;left:-76px;top:0;font-size:.8rem;font-weight:700;color:var(--accent);width:48px;text-align:right;font-variant-numeric:tabular-nums}
+.tl-time{position:absolute;left:-56px;top:0;font-size:.8rem;font-weight:700;color:var(--accent);width:48px;text-align:right;font-variant-numeric:tabular-nums}
 .tl-tz{font-size:.65rem;color:var(--text2);font-weight:400}
 .tl-content{font-size:.9rem}
 .tl-title{font-weight:600}
 .tl-desc{color:var(--text2);font-size:.82rem;margin-top:2px}
-.tl-tags{margin-top:4px;display:flex;flex-wrap:wrap;gap:4px}.tl-tag{font-size:.68rem;padding:2px 7px;border-radius:8px;background:var(--tag-bg);color:var(--text2)}
+.tl-tags{margin-top:4px;display:flex;flex-wrap:wrap;gap:4px}
+.tl-tag{font-size:.68rem;padding:2px 7px;border-radius:8px;background:var(--tag-bg);color:var(--text2)}
 .tl-tag.warn{background:#fff3cd;color:#856404}
 .tl-tag.ok{background:#d4edda;color:#155724}
 .tl-tag.book{background:#d1ecf1;color:#0c5460}
@@ -80,7 +84,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Pin
 const JST="+09:00";const HKT="+08:00";
 const TRIP={
 meta:{title:"北海道之旅 2026",sub:"札幌 · 小樽 · 旭川",dates:"11.13 — 11.20",people:2},
-events:[{t:"2026-11-13T09:15:00"+HKT,l:"航班 HB880 起飛",d:"香港 → 北海道"},
+events:[
+{t:"2026-11-13T09:15:00"+HKT,l:"航班 HB880 起飛",d:"香港 → 北海道"},
 {t:"2026-11-13T15:00:00"+JST,l:"抵達新千歲機場",d:"日本時間 UTC+9"},
 {t:"2026-11-14T09:00:00"+JST,l:"札幌第一天出發",d:"北海道神宮 → 白色戀人公園"},
 {t:"2026-11-15T14:05:00"+JST,l:"籃球比賽 北海道 vs 佐賀",d:"北海きたえーる"},
