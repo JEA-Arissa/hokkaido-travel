@@ -75,6 +75,17 @@ a{color:var(--accent2);text-decoration:none}
 .tip-item:last-child{border-bottom:none}
 .footer{text-align:center;padding:20px 0;color:var(--text2);font-size:.8rem}
 .theme-toggle{position:fixed;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:1.2rem;cursor:pointer;z-index:100;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+.shop-cat{font-size:1rem;font-weight:700;margin:1.2rem 0 .6rem;padding-bottom:.4rem;border-bottom:1px solid var(--border)}
+.shop-cat:first-child{margin-top:0}
+.shop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.6rem}
+.shop-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:.7rem .8rem;display:flex;flex-direction:column;gap:.4rem}
+.shop-name{font-weight:600;font-size:.85rem;line-height:1.3}
+.shop-spec{font-size:.75rem;color:var(--text2)}
+.shop-prices{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+.shop-tb{font-size:.8rem;font-weight:700;color:var(--accent)}
+.shop-jp{font-size:.8rem;color:var(--text2)}
+.shop-btn{display:inline-block;text-align:center;background:var(--accent);color:#fff;font-size:.75rem;font-weight:600;padding:.35rem .6rem;border-radius:6px;text-decoration:none;margin-top:.2rem;transition:opacity .2s}
+.shop-btn:hover{opacity:.85}
 </style>
 </head>
 <body>
@@ -262,6 +273,36 @@ tips:[
 "🍺 札幌啤酒博物館營業11:00-18:00，最後入館17:30，週一休館",
 "🎨 小樽藝術村11月 10:00-17:00，每週三休館（已避開，改週四去）",
 ],
+shopping:[
+{cat:"🍫 零食類",items:[
+{name:"唐吉訶德堅果零食綜合包",spec:"35g",tb:"¥7.22",link:"https://e.tb.cn/h.j7hghpiHnT4ZIqB?tk=L1Hl61B011b"},
+{name:"7-11巧克力夾心零食",spec:"40g",tb:"¥11.27",link:"https://e.tb.cn/h.jiHlJfUsNTHkv2x?tk=4KpP61BuThN"},
+{name:"白巧黑巧夾心",spec:"",tb:"¥17.8",link:"https://e.tb.cn/h.j8iqQ23TWyqdKCq?tk=ohoc61zaFyO"},
+{name:"朝日MINTIA潤喉糖",spec:"",tb:"¥6.8~8.5",link:"https://e.tb.cn/h.jiHKFIz7IBgypcu?tk=T0AF61ByAyW"},
+{name:"蜂蜜梅子",spec:"33g",tb:"¥12.97",link:"https://e.tb.cn/h.j7Sh2JzccmLysyr?tk=eb0061zXUKR"},
+{name:"綿綿酸沙軟糖",spec:"酸奶味",tb:"¥11.8",link:"https://e.tb.cn/h.jiHDazc2mqgGfve?tk=IQBu61z3qVJ"},
+{name:"軟糖",spec:"酸奶味",tb:"¥9",link:"https://e.tb.cn/h.jiHz9lc8gHHasTh?tk=afWn61z5n9y"}
+]},
+{cat:"💊 保健/藥品類",items:[
+{name:"UHA味覺糖 多維軟糖",spec:"葡萄味 10日量",tb:"¥36.89",link:"https://e.tb.cn/h.j8iNR4tLoZcjDOh?tk=oOH561BDrVR"},
+{name:"UHA味覺糖 多維軟糖",spec:"巴西莓葡萄味 鋅&葉酸",tb:"¥21.85",link:"https://e.tb.cn/h.j7SMn77SD1Hhzdz?tk=6Kti61zikbn"},
+{name:"hirosophy HBC膠原蛋白",spec:"210g",tb:"¥387.57",link:"https://e.tb.cn/h.jS4l8hmLj0XHytM?tk=2m2561zmCqo"},
+{name:"KOWA止癢液",spec:"30ml",tb:"¥28.05",link:"https://e.tb.cn/h.jSVFXalXQS96A87?tk=Ut9p61Bw8sh"},
+{name:"大正Pro-X速效感冒藥",spec:"12包",tb:"¥99.56",link:"https://e.tb.cn/h.j7SWi49qFatMVPv?tk=woIN61BCH7v"},
+{name:"新兒兒A感冒藥DX",spec:"90粒",tb:"¥161.25",link:"https://e.tb.cn/h.j8RTG4kdLByYprG?tk=DxLY61zoLHk"},
+{name:"小林製藥背部祛痘噴劑",spec:"100ml",tb:"¥36.5",link:"https://e.tb.cn/h.j8RZUTK6fAUGVWm?tk=zdAV61z67HM"},
+{name:"扁平疣軟膏",spec:"",tb:"¥24.57",link:"https://e.tb.cn/h.j7SIzESrcRNHstZ?tk=qt9y61zlPgt"}
+]},
+{cat:"💄 美妝/護膚類",items:[
+{name:"POLA White Shot LX 美白化妝水",spec:"150ml",tb:"¥295",link:"https://e.tb.cn/h.j8iIG5Z6kuqdstq?tk=zBXB61zb1wa"},
+{name:"naris娜麗絲足部防干裂護足霜",spec:"",tb:"¥48.4",link:"https://e.tb.cn/h.j8iHk4105HZ2JdN?tk=bile61z1KOR"},
+{name:"CEZANNE藍盒粉餅",spec:"",tb:"¥61.57",link:"https://e.tb.cn/h.jit3riJg0RlJIaD?tk=vsC361zkAo2"},
+{name:"花漾珊瑚腮紅06號",spec:"",tb:"¥28.13",link:"https://e.tb.cn/h.jit2JUPCypwHFgl?tk=Qqbk61zQVcS"},
+{name:"L'air De SAVON防曬霜",spec:"65g",tb:"¥40.37",link:"https://e.tb.cn/h.j8RkXwpMuk7OvZn?tk=a4ky61zGInj"}
+]}
+],
+};
+],
 };
 function gmaps(q){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);}
 function gnav(origin,dest,wps){
@@ -326,6 +367,7 @@ html+='<div class="card"><div class="sec-title"><span class="icon">🎫</span>�
 html+='<div class="card"><div class="sec-title"><span class="icon">📅</span>逐日行程</div>'+TRIP.days.map(function(d,di){return renderDay(d,di);}).join("")+'</div>';
 html+='<div class="card"><div class="sec-title"><span class="icon">📋</span>待辦清單</div>'+TRIP.todo.map(function(t){return '<div class="todo-item"><span class="todo-icon">'+(t.done?"✅":"⬜")+'</span><span>'+(t.done?"<s>":"")+t.text+(t.done?"</s>":"")+'</span></div>';}).join("")+'</div>';
 html+='<div class="card"><div class="sec-title"><span class="icon">💡</span>實用貼士</div>'+TRIP.tips.map(function(t){return '<div class="tip-item">'+t+'</div>';}).join("")+'</div>';
+html+='<div class="card"><div class="sec-title"><span class="icon">🛒</span>購買清單</div>'+TRIP.shopping.map(function(cat){return '<h3 class="shop-cat">'+cat.cat+'</h3><div class="shop-grid">'+cat.items.map(function(item){return '<div class="shop-item"><div class="shop-name">'+item.name+'</div>'+(item.spec?'<div class="shop-spec">'+item.spec+'</div>':'')+'<div class="shop-prices"><span class="shop-tb">淘寶 '+item.tb+'</span><span class="shop-jp">日本 ¥—</span></div><a href="'+item.link+'" class="shop-btn" target="_blank">淘寶查看 →</a></div>';}).join("")+'</div>';}).join("")+'</div>';
 html+='<div class="footer">北海道之旅 2026 · 札幌 · 小樽 · 旭川</div>';
 app.innerHTML=html;
 document.querySelectorAll(".day-head").forEach(function(h){h.addEventListener("click",function(){toggleDay(h);});});
